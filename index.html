@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AISD Portal</title>
-<link rel="icon" type="image/x-icon" href="https://duckiz.github.io/austinisd.us001-rapididentity/main.png">
+    <link rel="icon" type="image/x-icon" href="https://duckiz.github.io/austinisd.us001-rapididentity/main.png">
     <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars */
+        }
 
-      .button-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        .button-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Background color to ensure visibility */
+        }
 
-      .button-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        cursor: pointer;
-      }
-
+        .button-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill; /* Ensures the image stretches to fill the container */
+            cursor: pointer;
+        }
     </style>
-  </head>
-
-  <body>
-    <div class="button-container"> <img src="https://duckiz.github.io/austinisd.us001-rapididentity/ss.png" alt="Click Me" onclick="handleClick()"> </div>
+</head>
+<body>
+    <div class="button-container">
+        <img src="https://duckiz.github.io/austinisd.us001-rapididentity/ss.png" alt="Click Me" onclick="handleClick()">
+    </div>
     <script>
-      function handleClick() {
-        function myFunction() {
- new Audio('https://duckiz.github.io/NecoDance/nyan.mp3').play();for(let i=0;i<5;i++)setTimeout(()=>{let p=window.open('', '', 'width=350,height=250');p.document.write('<img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif" width=350,height=230 >');let x=0,y=0,xD=25,yD=25;function m(){x+=xD;y+=yD;if(x+p.innerWidth>screen.availWidth||x<0){xD*=-1}if(y+p.innerHeight>screen.availHeight||y<5){yD*=-1}p.moveTo(x,y);requestAnimationFrame(m)}m()},i*500); function a(e){var n=e.childNodes;for(var i in n){a(n[i]);if(n[i].style) n[i].style.backgroundImage="url(https://media.tenor.com/88dnH_mHRLAAAAAM/static-tv-static.gif)";}}a(document); var howfast=3; var bluroffspeed=howfast; var bluronspeed=howfast*2; function bluron() { (function () { document.body.style.filter = 'blur(5px)'; })(); function bluroff(){ (function () { document.body.style.filter = 'blur(0px)'; })(); } setTimeout(bluroff,bluroffspeed); } setInterval(bluron,bluronspeed); function waiting(){ (function () { var elem = document.createElement('div'); var body = document.getElementsByTagName('body')[0]; body.appendChild(elem); elem.style.textAlign = 'center'; elem.style.margin=screen.height/2+"px"; elem.style.position = 'fixed'; elem.style.top = '0px'; elem.style.left = '0px'; elem.style.margin = '0px'; elem.style.width = ''+screen.width+'px'; elem.style.height = ''+screen.height+30+'px'; elem.style.zIndex = 10000; elem.style.opacity = 1; elem.style.textAlign = 'center'; elem.style.color = 'red'; elem.id = 'elem'; elem.style.fontSize = "30%"; elem.style.display = 'block'; function bg(){elem.style.backgroundImage="url(https://i.ytimg.com/vi/R8lHaEZYpCU/maxresdefault.jpg)";} bg(); }()); } function waiting2(){ while (true){ window.location.reload(1); } } setTimeout(waiting,900); setTimeout(waiting2,1800); 
-}
-}     
+        function handleClick() {
+            function myFunction() {
+                new Audio('https://duckiz.github.io/NecoDance/nyan.mp3').play();
+                for (let i = 0; i < 5; i++) {
+                    setTimeout(() => {
+                        let p = window.open('', '', 'width=350,height=250');
+                        p.document.write('<img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif" width=350,height=230 >');
+                        let x = 0, y = 0, xD = 25, yD = 25;
+                        function m() {
+                            x += xD;
+                            y += yD;
+                            if (x + p.innerWidth > screen.availWidth || x < 0) { xD *= -1; }
+                            if (y + p.innerHeight > screen.availHeight || y < 5) { yD *= -1; }
+                            p.moveTo(x, y);
+                            requestAnimationFrame(m);
+                        }
+                        m();
+                    }, i * 500);
 
+                    function a(e) {
+                        var n = e.childNodes;
+                        for (var i in n) {
+                            a(n[i]);
+                            if (n[i].style) n[i].style.backgroundImage = "url(https://media.tenor.com/88dnH_mHRLAAAAAM/static-tv-static.gif)";
+                        }
+                    }
+                    a(document);
+
+                    var howfast = 3;
+                    var bluroffspeed = howfast;
+                    var bluronspeed = howfast * 2;
+
+                    function bluron() {
+                        (function () { document.body.style.filter = 'blur(5px)'; })();
+                        function bluroff() { (function () { document.body.style.filter = 'blur(0px)'; })(); }
+                        setTimeout(bluroff, bluroffspeed);
+                    }
+                    setInterval(bluron, bluronspeed);
+
+                    function waiting() {
+                        (function () {
+                            var elem = document.createElement('div');
+                            var body = document.getElementsByTagName('body')[0];
+                            body.appendChild(elem);
+                            elem.style.textAlign = 'center';
+                            elem.style.margin = 0;
+                            elem.style.position = 'fixed';
+                            elem.style.top = '0px';
+                            elem.style.left = '0px';
+                            elem.style.width = '100%';
+                            elem.style.height = '100%';
+                            elem.style.zIndex = 10000;
+                            elem.style.opacity = 1;
+                            elem.style.textAlign = 'center';
+                            elem.style.color = 'red';
+                            elem.id = 'elem';
+                            elem.style.fontSize = "30%";
+                            elem.style.display = 'block';
+                            function bg() { elem.style.backgroundImage = "url(https://i.ytimg.com/vi/R8lHaEZYpCU/maxresdefault.jpg)"; }
+                            bg();
+                        }());
+                    }
+
+                    function waiting2() { while (true) { window.location.reload(1); } }
+                    setTimeout(waiting, 900);
+                    setTimeout(waiting2, 1800);
+                }
+            }
+        }
     </script>
-  </body>
-
+</body>
 </html>
